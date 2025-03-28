@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>30-Minute Math Test</title>
+    <style>
+        /* All CSS styles from earlier */
+        body { font-family: Arial; max-width: 800px; margin: 0 auto; }
+        #timer { position: fixed; top: 10px; right: 10px; font-size: 24px; color: red; }
+        /* ... (full CSS content here) ... */
+    </style>
+</head>
+<body>
+    <!-- Full HTML content from earlier -->
+    <div id="timer">30:00</div>
+    <form id="testForm">
+        <div class="user-info">
+            <h2>Student Info</h2>
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="tel" name="phone" placeholder="Phone" required>
+        </div>
+        
+        <!-- 40 questions would appear here -->
+        <div class="question">
+            <h3>1. Solve for x: 3x + 5 = 20</h3>
+            <input type="number" name="q1" required>
+        </div>
+        <!-- ... (all 40 questions) ... -->
+        
+        <button type="submit">Submit</button>
+    </form>
+    
+    <div id="results" style="display:none;">
+        <h2>Your Score: <span id="scoreDisplay"></span></h2>
+    </div>
+
+    <script>
+        // Full JavaScript from earlier
+        let timeLeft = 1800; // 30 minutes
+        const solutions = { q1: 5, q2: "2,3", /*...*/ };
+        
+        function updateTimer() {
+            /* ... (timer logic) ... */
+        }
+        
+        function submitTest() {
+            /* ... (scoring logic) ... */
+        }
+        // ... (all remaining JS functions)
+    </script>
+</body>
+</html>
